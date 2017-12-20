@@ -7,8 +7,8 @@ $AuthToken = 'db1c9561751d6cc167391321b60d6fa7';
 $client = new Client($AccountSid, $AuthToken);
 
 try{
-$call = $client->calls->create("+16093391650","+16309310953",array("url"=>"http://demo.twilio.com/docs"));
-echo "Started call: " .$call->sid;
+$call = $client->calls->create("+12012384207","+16309310953",array("url"=>"http://demo.twilio.com/docs"));
+echo "Dailing your call";
 } catch(Exception $e){
 	echo "Error:".$e->getMessage();
 }
